@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6F6071A5-7A09-48FD-8DF6-C6ACE29C685A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ros_ios</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B60175BD-D42D-4843-8FC3-9C3542AF2B76</key>
+		<string>https://github.com/Eureka22/ros_for_ios-master.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>xcode_project/ros_ios.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B60175BD-D42D-4843-8FC3-9C3542AF2B76</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Eureka22/ros_for_ios-master.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B60175BD-D42D-4843-8FC3-9C3542AF2B76</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B60175BD-D42D-4843-8FC3-9C3542AF2B76</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ros_for_ios-master</string>
+		</dict>
+	</array>
+</dict>
+</plist>
