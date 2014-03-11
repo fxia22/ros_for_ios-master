@@ -10,7 +10,5 @@
 
 @interface SwitchTableViewController : UITableViewController
 
-@property (nonatomic, strong) NSMutableArray * topics_name;
-@property (nonatomic, strong) NSMutableArray * topics_type;
 
 @end

@@ -8,15 +8,14 @@
 
 #import "SwitchTableViewController.h"
 #import <ros/master.h>
-
+#include "SwitchTableViewCell.h"
 @interface SwitchTableViewController ()
 
 @end
 
 @implementation SwitchTableViewController
 
-@synthesize topics_name;
-@synthesize topics_type;
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -36,20 +35,7 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    topics_name  = [[NSMutableArray alloc] init];
-    topics_type  = [[NSMutableArray alloc] init];
-    
-    ros::master::V_TopicInfo topics_info;
-    ros::master::getTopics(topics_info);
-    
-    for (NSInteger i = 0; i < topics_info.size(); i++)
-    {
-        [self.topics_name addObject:[NSString stringWithUTF8String:topics_info[i].name.c_str()]];
-        [self.topics_type addObject:[NSString stringWithUTF8String:topics_info[i].datatype.c_str()]];
-        NSLog(@"%@",[NSString stringWithUTF8String:topics_info[i].name.c_str()]);
-    }
-    
-    [self.tableView reloadData];
+   
     
 }
 
@@ -65,22 +51,31 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"SwitchDeviceCell";
+    
+    SwitchTableViewCell *cell = [tableView
+                                dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[SwitchTableViewCell alloc]
+                initWithStyle:UITableViewCellStyleDefault
+                reuseIdentifier:CellIdentifier];
+    }
     
     // Configure the cell...
+    
+    cell.deviceName.text = @"Relay";
     
     return cell;
 }
