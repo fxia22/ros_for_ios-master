@@ -283,7 +283,7 @@ static OSStatus playbackCallback(void *inRefCon,
         NSLog(@"AudioOutputUnitStart Error !");
         exit(1);
     }
-    [self start];
+    //[self start];
     isPaused = NO;
 }
 

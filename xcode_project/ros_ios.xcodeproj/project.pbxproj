@@ -55,6 +55,10 @@
 		34BFC1DC16F7C2DD00B1FEC6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BFC1DB16F7C2DD00B1FEC6 /* MessageUI.framework */; };
 		34D49EB116F6AAF70089D0AD /* AccJoyViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 34D49EB016F6AAF70089D0AD /* AccJoyViewController.mm */; };
 		34EA80DC17B0969100A9590E /* NavigationVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 34EA80DB17B0969100A9590E /* NavigationVertex.glsl */; };
+		C41FE6A618CDE18300B70FF7 /* SwitchTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C41FE6A518CDE18300B70FF7 /* SwitchTableViewController.mm */; };
+		C41FE6AC18CE23EF00B70FF7 /* TempViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C41FE6AB18CE23EF00B70FF7 /* TempViewController.mm */; };
+		C41FE6AF18CE289400B70FF7 /* TempCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = C41FE6AE18CE289400B70FF7 /* TempCell.mm */; };
+		C41FE6B818CE8BB200B70FF7 /* ros_temp.mm in Sources */ = {isa = PBXBuildFile; fileRef = C41FE6B618CE8BB200B70FF7 /* ros_temp.mm */; };
 		C4EB5BA318BCDF8200527E80 /* x264_image_transport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB5B8A18BCDF8100527E80 /* x264_image_transport.framework */; };
 		C4EB5BA418BCDF8200527E80 /* tf2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB5B8B18BCDF8100527E80 /* tf2.framework */; };
 		C4EB5BA518BCDF8200527E80 /* tf2_msgs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB5B8C18BCDF8100527E80 /* tf2_msgs.framework */; };
@@ -151,6 +155,14 @@
 		34D49EAF16F6AAF70089D0AD /* AccJoyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccJoyViewController.h; sourceTree = "<group>"; };
 		34D49EB016F6AAF70089D0AD /* AccJoyViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AccJoyViewController.mm; sourceTree = "<group>"; };
 		34EA80DB17B0969100A9590E /* NavigationVertex.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; path = NavigationVertex.glsl; sourceTree = "<group>"; };
+		C41FE6A418CDE18300B70FF7 /* SwitchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchTableViewController.h; sourceTree = "<group>"; };
+		C41FE6A518CDE18300B70FF7 /* SwitchTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SwitchTableViewController.mm; sourceTree = "<group>"; };
+		C41FE6AA18CE23EE00B70FF7 /* TempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TempViewController.h; path = ../TempViewController.h; sourceTree = "<group>"; };
+		C41FE6AB18CE23EF00B70FF7 /* TempViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = TempViewController.mm; path = ../TempViewController.mm; sourceTree = "<group>"; };
+		C41FE6AD18CE289400B70FF7 /* TempCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempCell.h; sourceTree = "<group>"; };
+		C41FE6AE18CE289400B70FF7 /* TempCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TempCell.mm; sourceTree = "<group>"; };
+		C41FE6B618CE8BB200B70FF7 /* ros_temp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ros_temp.mm; sourceTree = "<group>"; };
+		C41FE6B718CE8BB200B70FF7 /* ros_temp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ros_temp.h; sourceTree = "<group>"; };
 		C4EB5B8A18BCDF8100527E80 /* x264_image_transport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = x264_image_transport.framework; path = ../Frameworks/x264_image_transport.framework; sourceTree = "<group>"; };
 		C4EB5B8B18BCDF8100527E80 /* tf2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tf2.framework; path = ../Frameworks/tf2.framework; sourceTree = "<group>"; };
 		C4EB5B8C18BCDF8100527E80 /* tf2_msgs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tf2_msgs.framework; path = ../Frameworks/tf2_msgs.framework; sourceTree = "<group>"; };
@@ -328,6 +340,14 @@
 		346F2BDD16CBEB1B0018FC3B /* ros_ios */ = {
 			isa = PBXGroup;
 			children = (
+				C41FE6B618CE8BB200B70FF7 /* ros_temp.mm */,
+				C41FE6B718CE8BB200B70FF7 /* ros_temp.h */,
+				C41FE6A418CDE18300B70FF7 /* SwitchTableViewController.h */,
+				C41FE6A518CDE18300B70FF7 /* SwitchTableViewController.mm */,
+				C41FE6AA18CE23EE00B70FF7 /* TempViewController.h */,
+				C41FE6AB18CE23EF00B70FF7 /* TempViewController.mm */,
+				C41FE6AD18CE289400B70FF7 /* TempCell.h */,
+				C41FE6AE18CE289400B70FF7 /* TempCell.mm */,
 				345A6DC317AEC2740075A52F /* ros_controllers */,
 				340EF304176111AE002DA5D8 /* PointCloudViewController.h */,
 				340EF305176111AE002DA5D8 /* PointCloudViewController.mm */,
@@ -481,14 +501,18 @@
 				346F2BE816CBEB1B0018FC3B /* AppDelegate.mm in Sources */,
 				346F2BF716CBEB1B0018FC3B /* ViewController.mm in Sources */,
 				346F2C0116CBF0F40018FC3B /* ros_planner.mm in Sources */,
+				C41FE6AC18CE23EF00B70FF7 /* TempViewController.mm in Sources */,
+				C41FE6B818CE8BB200B70FF7 /* ros_temp.mm in Sources */,
 				346F2C1216CBF3AE0018FC3B /* MapViewController.mm in Sources */,
 				340E32F616D58D300094ABB7 /* JoyViewController.mm in Sources */,
+				C41FE6AF18CE289400B70FF7 /* TempCell.mm in Sources */,
 				340E32F916D5DD130094ABB7 /* ros_joy.mm in Sources */,
 				340C70E616F24BE8006DA856 /* ros_video.mm in Sources */,
 				340C70E716F24BE8006DA856 /* VideoViewController.mm in Sources */,
 				34D49EB116F6AAF70089D0AD /* AccJoyViewController.mm in Sources */,
 				34BFC1D716F7BA1600B1FEC6 /* AccelerometerFilter.m in Sources */,
 				340B14431713609F00DF6512 /* TopicsListViewController.mm in Sources */,
+				C41FE6A618CDE18300B70FF7 /* SwitchTableViewController.mm in Sources */,
 				340B14461713654C00DF6512 /* TopicTableViewCell.m in Sources */,
 				3469F9F8171707A2001AAEA3 /* AudioViewController.mm in Sources */,
 				340A915F17173C9700D9D455 /* ros_audio.mm in Sources */,
