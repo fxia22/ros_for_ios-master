@@ -77,7 +77,7 @@
     }
 
     cell.temp_name.text = @"Temp";
-    cell.temp_value.text = [[NSString alloc] initWithString:[NSString stringWithFormat:@"%F",temperature]];
+    cell.temp_value.text = [[NSString alloc] initWithString:[NSString stringWithFormat:@"%.4F",temperature]];
     
     return cell;
 }

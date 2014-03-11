@@ -14,7 +14,7 @@
 RosRelay::RosRelay()
 {
    // sub_ = n_.subscribe("/building1/room1/sensors/Relayerature/Relay", 1, &RosRelay::renewData, this);
-    pub_ = n_.advertise<std_msgs::Bool>("/building1/room1/acuator/relay/relay1", 1, true);
+    pub_ = n_.advertise<std_msgs::Bool>("/building1/room1/acuator/relay/relay1", 5, false);
     ros_thread_ = new boost::thread(&RosRelay::rosSpin, this);
 }
 

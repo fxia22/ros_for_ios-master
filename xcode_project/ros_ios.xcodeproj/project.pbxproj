@@ -61,6 +61,9 @@
 		C41FE6B818CE8BB200B70FF7 /* ros_temp.mm in Sources */ = {isa = PBXBuildFile; fileRef = C41FE6B618CE8BB200B70FF7 /* ros_temp.mm */; };
 		C41FE6BB18CEA3CD00B70FF7 /* SwitchTableViewCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = C41FE6BA18CEA3CD00B70FF7 /* SwitchTableViewCell.mm */; };
 		C41FE6BE18CEA96A00B70FF7 /* ros_relay.mm in Sources */ = {isa = PBXBuildFile; fileRef = C41FE6BD18CEA96A00B70FF7 /* ros_relay.mm */; };
+		C447EBAF18CF1B300071419D /* ros_rules.mm in Sources */ = {isa = PBXBuildFile; fileRef = C447EBAD18CF1B300071419D /* ros_rules.mm */; };
+		C447EBB218CF1BF30071419D /* RuleViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C447EBB118CF1BF30071419D /* RuleViewController.mm */; };
+		C447EBB418CF25050071419D /* quigley-icra2009-ros.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C447EBB318CF25050071419D /* quigley-icra2009-ros.jpg */; };
 		C4EB5BA318BCDF8200527E80 /* x264_image_transport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB5B8A18BCDF8100527E80 /* x264_image_transport.framework */; };
 		C4EB5BA418BCDF8200527E80 /* tf2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB5B8B18BCDF8100527E80 /* tf2.framework */; };
 		C4EB5BA518BCDF8200527E80 /* tf2_msgs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EB5B8C18BCDF8100527E80 /* tf2_msgs.framework */; };
@@ -169,6 +172,11 @@
 		C41FE6BA18CEA3CD00B70FF7 /* SwitchTableViewCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SwitchTableViewCell.mm; sourceTree = "<group>"; };
 		C41FE6BC18CEA96A00B70FF7 /* ros_relay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ros_relay.h; sourceTree = "<group>"; };
 		C41FE6BD18CEA96A00B70FF7 /* ros_relay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ros_relay.mm; sourceTree = "<group>"; };
+		C447EBAD18CF1B300071419D /* ros_rules.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ros_rules.mm; sourceTree = "<group>"; };
+		C447EBAE18CF1B300071419D /* ros_rules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ros_rules.h; sourceTree = "<group>"; };
+		C447EBB018CF1BF30071419D /* RuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuleViewController.h; sourceTree = "<group>"; };
+		C447EBB118CF1BF30071419D /* RuleViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RuleViewController.mm; sourceTree = "<group>"; };
+		C447EBB318CF25050071419D /* quigley-icra2009-ros.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "quigley-icra2009-ros.jpg"; path = "../../../挑战杯32/quigley-icra2009-ros.jpg"; sourceTree = "<group>"; };
 		C4EB5B8A18BCDF8100527E80 /* x264_image_transport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = x264_image_transport.framework; path = ../Frameworks/x264_image_transport.framework; sourceTree = "<group>"; };
 		C4EB5B8B18BCDF8100527E80 /* tf2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tf2.framework; path = ../Frameworks/tf2.framework; sourceTree = "<group>"; };
 		C4EB5B8C18BCDF8100527E80 /* tf2_msgs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = tf2_msgs.framework; path = ../Frameworks/tf2_msgs.framework; sourceTree = "<group>"; };
@@ -269,6 +277,10 @@
 		345A6DC317AEC2740075A52F /* ros_controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C447EBB018CF1BF30071419D /* RuleViewController.h */,
+				C447EBB118CF1BF30071419D /* RuleViewController.mm */,
+				C447EBAD18CF1B300071419D /* ros_rules.mm */,
+				C447EBAE18CF1B300071419D /* ros_rules.h */,
 				C41FE6B618CE8BB200B70FF7 /* ros_temp.mm */,
 				C41FE6B718CE8BB200B70FF7 /* ros_temp.h */,
 				340EF30A1761133C002DA5D8 /* ros_kinect.h */,
@@ -396,6 +408,7 @@
 		346F2BDE16CBEB1B0018FC3B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C447EBB318CF25050071419D /* quigley-icra2009-ros.jpg */,
 				34CF3FCE16D82AD300FD4758 /* ros_ios-Info.plist */,
 				340A2F2016D7F75500722520 /* Icon.png */,
 				346F2BFD16CBEC090018FC3B /* introlab.png */,
@@ -490,6 +503,7 @@
 				346F2BF116CBEB1B0018FC3B /* MainStoryboard_iPhone.storyboard in Resources */,
 				346F2BF416CBEB1B0018FC3B /* MainStoryboard_iPad.storyboard in Resources */,
 				346F2BFE16CBEC090018FC3B /* introlab.png in Resources */,
+				C447EBB418CF25050071419D /* quigley-icra2009-ros.jpg in Resources */,
 				340A2F2116D7F75500722520 /* Icon.png in Resources */,
 				3408E75E172471F7000B201E /* sound.png in Resources */,
 				3409421C17282960002143AC /* TextureFragment.glsl in Resources */,
@@ -510,6 +524,7 @@
 				346F2BE416CBEB1B0018FC3B /* main.m in Sources */,
 				346F2BE816CBEB1B0018FC3B /* AppDelegate.mm in Sources */,
 				346F2BF716CBEB1B0018FC3B /* ViewController.mm in Sources */,
+				C447EBB218CF1BF30071419D /* RuleViewController.mm in Sources */,
 				C41FE6BE18CEA96A00B70FF7 /* ros_relay.mm in Sources */,
 				346F2C0116CBF0F40018FC3B /* ros_planner.mm in Sources */,
 				C41FE6AC18CE23EF00B70FF7 /* TempViewController.mm in Sources */,
@@ -525,6 +540,7 @@
 				340B14431713609F00DF6512 /* TopicsListViewController.mm in Sources */,
 				C41FE6BB18CEA3CD00B70FF7 /* SwitchTableViewCell.mm in Sources */,
 				C41FE6A618CDE18300B70FF7 /* SwitchTableViewController.mm in Sources */,
+				C447EBAF18CF1B300071419D /* ros_rules.mm in Sources */,
 				340B14461713654C00DF6512 /* TopicTableViewCell.m in Sources */,
 				3469F9F8171707A2001AAEA3 /* AudioViewController.mm in Sources */,
 				340A915F17173C9700D9D455 /* ros_audio.mm in Sources */,
@@ -639,7 +655,7 @@
 				GCC_PREFIX_HEADER = "ros_ios/ros_ios-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "ros_ios/ros_ios-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = ROS4iOS;
 				USER_HEADER_SEARCH_PATHS = "";
@@ -663,7 +679,7 @@
 				GCC_PREFIX_HEADER = "ros_ios/ros_ios-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "ros_ios/ros_ios-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = ROS4iOS;
 				USER_HEADER_SEARCH_PATHS = "";

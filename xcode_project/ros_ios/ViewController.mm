@@ -66,7 +66,7 @@
 
         if(!ros::isInitialized())
         {
-            ros::init(argc,argv,"ros4ios");
+            ros::init(argc,argv,"ros4ios_iphone");
         }
         else
         {
