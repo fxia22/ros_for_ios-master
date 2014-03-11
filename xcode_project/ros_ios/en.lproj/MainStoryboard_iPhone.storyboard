@@ -821,7 +821,6 @@
         <!--Tab Bar Controller - ROS Logger-->
         <scene sceneID="dGl-va-mDG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FhI-Rw-zhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController definesPresentationContext="YES" id="zPs-Xt-pyz" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="ROS Logger" id="wk0-d6-uwW"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -835,6 +834,7 @@
                         <segue destination="jcG-7M-slo" kind="relationship" relationship="viewControllers" id="fhO-tU-nXF"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FhI-Rw-zhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1770" y="-689"/>
         </scene>
@@ -987,6 +987,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yHe-Qm-4rY">
+                            <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="switchBotton:" destination="J3J-3c-Ds6" eventType="touchUpInside" id="jDQ-VK-cqY"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SwitchDeviceCell" id="xqx-w1-lr5" customClass="SwitchTableViewCell">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
@@ -1002,16 +1012,6 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZM-Om-zG9">
-                                            <rect key="frame" x="235" y="7" width="47" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Switch">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="switchDevice:" destination="xqx-w1-lr5" eventType="touchUpInside" id="BPI-Te-qqz"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>

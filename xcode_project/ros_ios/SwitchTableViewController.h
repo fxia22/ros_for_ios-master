@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ros_relay.h"
 
 @interface SwitchTableViewController : UITableViewController
+{
+    bool status;
+    RosRelay*  ros_controller_;
+}
 
 
 @end

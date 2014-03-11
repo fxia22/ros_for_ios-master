@@ -7,14 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ros_relay.h"
 @interface SwitchTableViewCell : UITableViewCell
 {
     UILabel * deviceName;
     bool status;
+    RosRelay * ros_controller_;
+    
 }
 @property (strong, nonatomic) IBOutlet UILabel *deviceName;
-- (IBAction)switchDevice:(id)sender;
 
 
 @end

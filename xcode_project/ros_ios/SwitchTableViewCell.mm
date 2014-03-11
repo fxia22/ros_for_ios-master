@@ -17,6 +17,7 @@
     if (self) {
         // Initialization code
         self->status = false;
+        ros_controller_ = new RosRelay();
     }
     return self;
 }
@@ -29,9 +30,4 @@
  
 }
 
-- (IBAction)switchDevice:(id)sender
-{
-    self->status = !self->status;
-    NSLog(@"%d",status);
-}
 @end

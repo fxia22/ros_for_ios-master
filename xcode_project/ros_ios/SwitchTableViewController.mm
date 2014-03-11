@@ -9,7 +9,9 @@
 #import "SwitchTableViewController.h"
 #import <ros/master.h>
 #include "SwitchTableViewCell.h"
+#include "ros_relay.h"
 @interface SwitchTableViewController ()
+- (IBAction)switchBotton:(id)sender;
 
 @end
 
@@ -35,7 +37,8 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-   
+    status = true;
+    ros_controller_ = new RosRelay();
     
 }
 
@@ -131,4 +134,8 @@
 
  */
 
+- (IBAction)switchBotton:(id)sender {
+    status = !status;
+    ros_controller_->sendCmds(status);
+}
 @end
