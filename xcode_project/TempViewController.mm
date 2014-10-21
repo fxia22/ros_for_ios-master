@@ -59,15 +59,28 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 2;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"tTempCell";
+    static NSString *CellIdentifier;
+    switch ([indexPath row]) {
+        case 0:
+            CellIdentifier = @"tTempCell";
+            break;
+        case 1:
+             CellIdentifier = @"tLightCell";
+            break;
+        default:
+              CellIdentifier = @"tHumidCell";
+            break;
+    }
+    
  //   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    
     TempCell *cell = [tableView
                                 dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -76,8 +89,31 @@
                 reuseIdentifier:CellIdentifier];
     }
 
-    cell.temp_name.text = @"Temp";
-    cell.temp_value.text = [[NSString alloc] initWithString:[NSString stringWithFormat:@"%.4F",temperature]];
+    
+    switch ([indexPath row]) {
+        case 0:
+            cell.temp_name.text = @"Temp";
+            cell.temp_value.text = [[NSString alloc] initWithString:[NSString stringWithFormat:@"%.4F",temperature]];
+            break;
+        case 1:
+            cell.temp_name.text = @"Light";
+            cell.temp_value.text = [[NSString alloc] initWithString:[NSString stringWithFormat:@"%.4F",20.967+(random()%2000/2000.0)]];
+            break;
+        case 2:
+            cell.temp_name.text = @"Light";
+            cell.temp_value.text = [[NSString alloc] initWithString:[NSString stringWithFormat:@"%.4F",20.44+(random()%2000/2000.0)]];
+            break;
+        case 3:
+            cell.temp_name.text = @"Humid";
+            cell.temp_value.text = [[NSString alloc] initWithString:[NSString stringWithFormat:@"%.4F",80.27+(random()%2000/2000.0)]];
+            break;
+        default:
+            cell.temp_name.text = @"Humid";
+            cell.temp_value.text = [[NSString alloc] initWithString:[NSString stringWithFormat:@"%.4F",83.25+(random()%2000/2000.0)]];
+
+            break;
+    }
+    
     
     return cell;
 }
@@ -138,4 +174,7 @@
     NSLog(@"%f",temperature);
     [self.tableView reloadData];
 }
+
+
+
 @end

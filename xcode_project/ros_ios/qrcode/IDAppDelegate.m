@@ -1,25 +1,26 @@
 //
-//  AppDelegate.m
-//  ros_ios
+//  IDAppDelegate.m
+//  Barcodes_iOS7_Sample
 //
-//  Created by Ronan Chauvin on 2013-02-13.
-//  Copyright (c) 2013 Ronan Chauvin. All rights reserved.
+//  Created by Ivan Djeferov on 10/12/13.
+//  Copyright (c) 2013 Incept Development. All rights reserved.
 //
 
-#import "AppDelegate.h"
-#import <ros/init.h>
-#import <CoreLocation/CoreLocation.h>
+#import "IDAppDelegate.h"
+#import "IDVideoViewController.h"
 
-@implementation AppDelegate
-
+@implementation IDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.videoViewController = [[IDVideoViewController alloc] init];
+    self.window.rootViewController = self.videoViewController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -30,9 +31,6 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-    
-    
-    NSLog(@"%s", __PRETTY_FUNCTION__);
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -48,8 +46,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    NSLog(@"%s", __PRETTY_FUNCTION__);
-    ros::shutdown();
 }
 
 @end

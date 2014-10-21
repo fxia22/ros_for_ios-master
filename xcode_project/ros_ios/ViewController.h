@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "qrcode/IDVideoViewController.h"
 
 @interface ViewController : UIViewController
 
@@ -16,5 +17,9 @@
 - (IBAction)ip_edit_ended:(id)sender;
 + (NSString *)getIPAddress;
 + (BOOL)isValidIp:(NSString*)string;
+@property (strong, nonatomic) IBOutlet UIButton *scanButton;
+
+@property (strong, nonatomic) IDVideoViewController *videoViewController;
+
 
 @end

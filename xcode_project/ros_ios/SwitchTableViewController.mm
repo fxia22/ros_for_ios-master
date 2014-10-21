@@ -40,6 +40,10 @@
     status = true;
     ros_controller_ = new RosRelay();
     
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(restart)
+                                                 name:UIApplicationDidBecomeActiveNotification object:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -138,4 +142,12 @@
     status = !status;
     ros_controller_->sendCmds(status);
 }
+
+- (void) restart
+{
+    delete ros_controller_;
+    ros_controller_ = new RosRelay();//一种临时的解决方案
+}
+
 @end
+

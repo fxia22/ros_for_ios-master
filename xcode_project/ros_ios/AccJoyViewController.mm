@@ -8,7 +8,7 @@
 
 #import "AccJoyViewController.h"
 #import "AccelerometerFilter.h"
-
+#import "CoreMotion/CoreMotion.h"
 #define kUpdateFrequency    60.0
 
 @interface AccJoyViewController ()
@@ -33,6 +33,13 @@
     [self changeFilter:[LowpassFilter class]];
     [[UIAccelerometer sharedAccelerometer] setUpdateInterval:1.0 / kUpdateFrequency];
     [[UIAccelerometer sharedAccelerometer] setDelegate:self];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(restart)
+                                                 name:UIApplicationDidBecomeActiveNotification object:nil];
+
+    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,7 +80,7 @@
         
         [filter addAcceleration:acceleration];
         
-        ros_controller_->sendCmds(k_x*filter.y, k_y*0.0, k_theta*filter.x);
+        ros_controller_->sendCmds(k_x*filter.y*6, k_y*0.0, k_theta*filter.x*6);
         
         UIGraphicsBeginImageContext(self.view.frame.size);
         [self.image.image drawInRect:self.view.frame];
@@ -117,6 +124,12 @@
         // Set the adaptive flag
         filter.adaptive = YES;
     }
+}
+
+- (void) restart
+{
+    delete ros_controller_;
+    ros_controller_ = new RosJoy();//一种临时的解决方案
 }
 
 @end

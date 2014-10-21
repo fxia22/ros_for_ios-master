@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ros_joy.h"
+#import <CoreMotion/CoreMotion.h>
 
 @class AccelerometerFilter;
 
@@ -28,6 +29,8 @@
 @property (nonatomic, retain) UIAccelerometer * accelerometer;
 @property(nonatomic, retain) IBOutlet UIBarButtonItem *pause;
 @property (strong, nonatomic) IBOutlet UIImageView *image;
+
+
 
 - (IBAction)pauseOrResume:(id)sender;
 

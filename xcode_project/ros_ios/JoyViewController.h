@@ -13,13 +13,19 @@
 {
     RosJoy * ros_controller_;
     NSTimer * timer;
-    BOOL ballPushed;
+    BOOL ballPushed1;
+    BOOL ballPushed2;
+    
     CGPoint currentPoint;
-    CGPoint center;
+    CGPoint center1;
+    CGPoint center2;
+    double angle;
+    int jlength;
 }
 
 @property (strong, nonatomic) IBOutlet UIImageView *image;
 @property (strong, nonatomic) IBOutlet UIView *ballView;
+@property (strong, nonatomic) IBOutlet UIView *ballView2;
 
 - (void)timerCB;
 

@@ -5,27 +5,31 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>6F6071A5-7A09-48FD-8DF6-C6ACE29C685A</string>
+	<string>C5EE0975-DEA3-4B9C-B58D-B821FFEFE865</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ros_ios</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>7AF8D41227D72FA0DE69EAC3D3997053F6FEDB9E</key>
+		<string>https://github.com/Eureka22/ros_for_ios-master.git</string>
 		<key>B60175BD-D42D-4843-8FC3-9C3542AF2B76</key>
 		<string>https://github.com/Eureka22/ros_for_ios-master.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>xcode_project/ros_ios.xcodeproj/project.xcworkspace</string>
+	<string>xcode_project/ros_ios.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B60175BD-D42D-4843-8FC3-9C3542AF2B76</key>
+		<key>7AF8D41227D72FA0DE69EAC3D3997053F6FEDB9E</key>
 		<string>../../..</string>
+		<key>B60175BD-D42D-4843-8FC3-9C3542AF2B76</key>
+		<string>../../../../ros_for_ios-master</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Eureka22/ros_for_ios-master.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B60175BD-D42D-4843-8FC3-9C3542AF2B76</string>
+	<string>7AF8D41227D72FA0DE69EAC3D3997053F6FEDB9E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>B60175BD-D42D-4843-8FC3-9C3542AF2B76</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ros_for_ios-master</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7AF8D41227D72FA0DE69EAC3D3997053F6FEDB9E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>tinker_control</string>
 		</dict>
 	</array>
 </dict>
